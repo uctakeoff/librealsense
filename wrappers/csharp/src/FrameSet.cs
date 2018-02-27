@@ -17,6 +17,8 @@ namespace Intel.RealSense
                 return new DepthFrame(ptr);
             else if (NativeMethods.rs2_is_frame_extendable_to(ptr, Extension.VideoFrame, out error) > 0)
                 return new VideoFrame(ptr);
+            else if (NativeMethods.rs2_is_frame_extendable_to(ptr, Extension.Points, out error) > 0)
+                return new Points(ptr);
             else
                 return new Frame(ptr);
         }

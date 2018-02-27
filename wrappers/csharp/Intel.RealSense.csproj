@@ -66,6 +66,7 @@
     <Compile Include="src\FrameQueue.cs" />
     <Compile Include="src\NativeMethods.cs" />
     <Compile Include="src\Pipeline.cs" />
+    <Compile Include="src\PointCloud.cs" />
     <Compile Include="src\Processing.cs" />
     <Compile Include="src\Sensor.cs" />
     <Compile Include="src\StreamProfile.cs" />
